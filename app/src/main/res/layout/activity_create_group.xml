@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".CreateGroupActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/purple_200">
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/GroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_create"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="text"
+        android:maxLength="10"
+        android:layout_marginTop="130dp"
+        android:hint="Group Name"
+        />
+    <EditText
+        android:id="@+id/Groupid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/GroupName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:hint="Group pin"
+        />
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Groupid"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_shape"
+        android:text="Create Group"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
